@@ -27,8 +27,7 @@ public class EmployeeSeviceImpl implements EmployeeService {
 
 	@Override
 	public Employee findEmpById(Integer id) {
-
-		return null;
+		return repo.findById(id).get();
 	}
 
 	@Override
